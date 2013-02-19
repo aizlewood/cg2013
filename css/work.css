@@ -146,11 +146,11 @@ cite.source { font-weight: 100; font-size: 0.7em; text-transform: capitalize; co
 }
 
 
-
+p.caption {text-transform: uppercase; font-size: 0.8em; font-weight: 200; letter-spacing: 1px; color: #999}
 b.title { display:block; color: #e53a3a; letter-spacing: -1px; text-transform: uppercase; font-size: 1em; margin-left: 99px; }
 .intro h3 { font-weight: 500; color: #666; font-size: 1em; float: left; position: relative; top: -1.0em; margin-left: 20px;}
 
-hgroup { margin: 0 auto; text-align: center; color: #fff; padding: 2% 8%;  margin-top: 1em; margin-bottom: 1%; }
+hgroup { margin: 0 auto; text-align: center; color: #fff; padding: 2% 8%;  margin-top: 3em; margin-bottom: 1%; }
 hgroup h1 {text-transform: uppercase; font-size: 2em;}
 hgroup h2 {margin: 0 auto; font-size: 1.3em; color: #748a99;}
 hgroup a { text-transform: uppercase; font-weight: bold; padding: 0.2% 0.5%; 
