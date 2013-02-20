@@ -37,6 +37,7 @@ hr {
 
 img {
     vertical-align: middle;
+    max-width: 100%;
 }
 
 fieldset {
@@ -56,11 +57,12 @@ textarea {
     padding: 0.2em 0;
 }
 
+a { color: #e53a3a}
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body { background: url(../img/grey.png)}
+body { background: #fff}
 h1,
 h2,
 h3,
@@ -79,11 +81,66 @@ h3 span,
 h4 span,
 h5 span { font-family: Baskerville, georgia, serif; font-style: italic}
 
-h1 {}
-h2 {font-size: 1.8em; line-height: 1.1}
-h3 {}
+h1 { font-size: 3em;  line-height: 1.3}
+h2 {text-transform: uppercase; font-size: 2em;}
+h3 {text-transform: uppercase; font-size: 1.5em;}
 h4 {}
 h5 {}
+
+.centre {text-align: center}
+.middle { margin: 0 auto;}
+.row { margin: 0 0 3% 0; overflow: hidden}
+
+@media only screen and (min-width: 45em) {
+	.lefted { text-align: left}
+	.righted { text-align: right}
+
+}
+
+nav {width: 100%; position: fixed; z-index: 99; background: #162027; box-shadow: rgba(0,0,0,0.5) 0 1px 2px;}
+nav ul  { margin: 0; padding: 1em 0; }
+nav ul li { display: inline; margin-right: 2%; color: #fff;}
+nav ul li a { color: #fff; }
+
+header { background: #162027; width: 100%; position: relative; }
+
+
+@media only screen and (min-width: 35em) {
+	header { background: #162027; width: 100%; position: fixed; top: 0; z-index: 0; padding: 4em 0 0 0;}
+}
+
+.container { display: block; background: #fff; width: 100%;  position: relative; top: 2em; z-index: 1; }
+
+.title { margin: 0 auto; width: 80%;}
+.lede { }
+.lede h3 {margin-top: 0.45em}
+.lede img { width: 95%}
+.lede .meta { text-align: center}
+.lede .meta p { font-size: 0.85em; color: #999}
+article img { display: block; float: none; margin: 1em 0; width: 100%;}
+
+@media only screen and (min-width: 45em) {
+	article img { display: inline; float: left; margin: 0 1em 0 0; width: auto}
+}
+
+
+.inner {margin: 0 auto; padding: 2%; max-width: 1140px; /* background: url(../img/dyeline.gif) top center repeat-y  */}
+.social { margin: 0 auto !important; display: block}
+.intro { padding: 3%;}
+
+
+.testi.author {margin: 0 auto; text-align: center; border-bottom: 1px solid #ddd; padding: 2% 0; margin-top: 10%; position: relative }
+.testi blockquote { color: #162027; font-weight: 600; line-height: 1.8; margin-top: -4em}
+.testi .avatar { position: relative; top: -55px; width: 65px;}
+cite { display: block; font-style: normal; font-weight: 800; text-transform: uppercase; font-size: 0.85em; color: #e33a3b}
+cite.source { font-weight: 100; font-size: 0.7em; text-transform: capitalize; color: #999}
+
+@media only screen and (min-width: 45em) {
+	.testi { width: 60%; margin-top: 4.5%; }
+	.testi.author blockquote { color: #162027; font-weight: 600; line-height: 1.8; margin-top: -0.5em}
+	.testi.author .avatar { position: relative; top: 0px; }	
+	.testi.author { width: 100%;}
+}
 
 .avatar {
 	text-align: center;
@@ -94,55 +151,90 @@ h5 {}
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 	border: 4px solid #fff;
-	margin-top: -2em;
 	margin-bottom: 1em;
-	float: left;
 	width: 70px;
 }
 
+
+p.caption {text-transform: uppercase; font-size: 0.8em; font-weight: 200; letter-spacing: 1px; color: #999}
 b.title { display:block; color: #e53a3a; letter-spacing: -1px; text-transform: uppercase; font-size: 1em; margin-left: 99px; }
 .intro h3 { font-weight: 500; color: #666; font-size: 1em; float: left; position: relative; top: -1.0em; margin-left: 20px;}
 
-.container {}
-.row {}
-.center {text-align: center}
-.intro { padding: 3%;}
-hgroup { color: #fff; padding: 2% 8%; background: #e53a3a; margin-top: 1em; margin-bottom: 5%;}
-hgroup h2 { clear: both; max-width: 89%;}
-hgroup h2 a { color: #fff;  padding: 0.2% 0.5%; 
+hgroup { margin: 0 auto; text-align: center; color: #fff; padding: 2% 8%;  margin-top: 3em; margin-bottom: 1%; }
+hgroup h1 {text-transform: uppercase; font-size: 2em;}
+hgroup h2 {margin: 0 auto; font-size: 1.3em; color: #748a99;}
+hgroup a { text-transform: uppercase; font-weight: bold; padding: 0.2% 0.5%; 
 transition: background .25s ease-in-out;
 -moz-transition: background .25s ease-in-out;
 -webkit-transition: background .25s ease-in-out;}
 hgroup h2 a:hover { background: rgba(0,0,0,0.2); border-radius: 4px; text-shadow: #852424 0 1px 2px;}
 
+.hero figure {}
+
+@media only screen and (min-width: 35em) {
+	hgroup h2 {margin: 0 auto; font-size: 1.3em; color: #748a99; width: 50%;}
+	.synopsis { max-width: 75%;}
+}
+
 .social {color: #fff; overflow: hidden; margin: 0; padding: 0%}
 ul.socials { padding: 0; }
 ul.socials li {list-style-type: none; padding: 3% 0; font-size: 1.1em; display: inline; text-align: center; line-height: 3; }
-ul.socials li a {color: #e53a3a; font-weight: 700; padding: 1% 3%; border-radius: 4px; opacity: 0.8; background: /* url(../img/social-sprite.png) 5px 9px no-repeat #fff*/ rgb(255,255,255);  }
+ul.socials li a {color: #e53a3a; font-weight: 700; padding: 1% 3%; border-radius: 4px; opacity: 0.8; background: url(../img/social-sprite.png) 5px 9px no-repeat #fff;  }
 ul.socials li a:hover {
-opacity: 1;
 text-indent: -1000em;
 text-shadow: none;
 transition: opacity .25s ease-in-out;
 -moz-transition: opacity .25s ease-in-out;
 -webkit-transition: opacity .25s ease-in-out;
+opacity: 1;
    }
 
-/*
 ul.socials li a.tw { background-position: 5px 9px;} 
 ul.socials li a.dr { background-position: 5px -211px;} 
 ul.socials li a.la { background-position: 5px -78px;} 
 ul.socials li a.fl { background-position: 5px -168px;} 
 ul.socials li a.de { background-position: 5px -256px;} 
 ul.socials li a.li { background-position: 5px -36px;} 
-*/
+
+
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+
+@media all and (min-width: 45em) {
+    .half {
+        width: 48%;
+        margin-right: 3.5%;
+        float: left;
+    }
+
+    .third {
+        width: 31%;
+        margin-right: 2%;
+        float: left;
+    }
+
+    .two-thirds {
+        width: 60%;
+        margin-right: 4%;
+        float: left;
+    }
+    .quarter {
+        width: 22%;
+        margin-right: 4%;
+        float: left;
+    }
+    .last {
+        margin-right: 0;
+    }
+}   
+
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-	h2 {font-size: 3em; max-width: 95%;}
 	.avatar { width: auto}
 	hgroup { margin-top: 0;}	
 	b.title {margin-left: 127px; }
