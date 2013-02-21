@@ -105,11 +105,13 @@ nav ul  { margin: 0; padding: 1em 0; }
 nav ul li { display: inline; margin-right: 2%; color: #fff;}
 nav ul li a { color: #fff; }
 
+
+
 header { background: #162027; width: 100%; position: relative; }
 
 
 @media only screen and (min-width: 35em) {
-	header { background: #162027; width: 100%; position: fixed; top: 0; z-index: 0; padding: 4em 0 0 0;}
+	header { width: 100%; position: fixed; top: 0; z-index: 0; padding: 4em 0 0 0;}
 }
 
 .container { display: block; background: #fff; width: 100%;  position: relative; top: 2em; z-index: 1; }
@@ -168,6 +170,14 @@ hgroup h2 a:hover { background: rgba(0,0,0,0.2); border-radius: 4px; text-shadow
 	hgroup h2 {margin: 0 auto; font-size: 1.3em; color: #748a99; width: 50%;}
 	.synopsis { max-width: 75%;}
 }
+
+/*
+@media only screen and (min-height: 679px) {
+	.hero figure img {width: 60%;}
+	.container {top: 37em;}
+}
+*/
+
 
 .social {color: #fff; overflow: hidden; margin: 0; padding: 0%}
 ul.socials { padding: 0; }
