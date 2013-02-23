@@ -9,9 +9,8 @@
         <title>Jon Aizlewood</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="/js/modernizr.js"></script>
         <link rel="stylesheet" href="/css/normalize.min.css">
-        <link rel="stylesheet" href="/css/work.css">
+        <link rel="stylesheet" href="/css/style.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
         <!--[if lt IE 9]>
@@ -22,16 +21,15 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-
-
-        	<nav id="nav" class="centre" role="navigation">
+	
+        	<nav class="centre" role="navigation">
         		<ul>
         			<li class="active"><a href="the-pie.html">Work</a></li>
         			<li><a href="#">About</a></li>
         			<li><b>Logo</b></li>
         			<li><a href="/wrote/seo-pills.html">Blog</a></li>
         			<li><a href="#">Contact</a></li>
-        		</ul>
+        		</ul>      		
 	       	</nav>	
 
 
@@ -162,8 +160,7 @@
 <script src="/js/yepnope.1.5.3-min.js"></script>
 <script>
 (function(win) {
-	yepnope.injectJs("//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js");
-	if (win.innerWidth > 500) {
+	if (win.innerWidth > 1024) {
 		yepnope.injectJs("//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", function() {
 			yepnope({
 				test: win.jQuery,
@@ -178,6 +175,7 @@
 	}
     
 })(this);
+
 </script>     
  
     </body>

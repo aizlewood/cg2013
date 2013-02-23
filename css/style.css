@@ -97,27 +97,27 @@ h5 {}
 @media only screen and (min-width: 45em) {
 	.lefted { text-align: left}
 	.righted { text-align: right}
-
 }
 
 nav {width: 100%; position: fixed; z-index: 99; background: #162027; box-shadow: rgba(0,0,0,0.5) 0 1px 2px;}
-nav ul  { margin: 0; padding: 1em 0; }
-nav ul li { display: inline; margin-right: 2%; color: #fff;}
+nav ul  { margin: 1em 0; padding: 0; }
+nav ul li { display: inline; margin: 0 1.7% 0 1.7%; color: #fff;}
 nav ul li a { color: #fff; }
 
 
+header { background: #162027; position: relative; overflow: hidden; width: 100%;}
 
-header { background: #162027; width: 100%; position: relative; }
 
-
-@media only screen and (min-width: 35em) {
-	header { width: 100%; position: fixed; top: 0; z-index: 0; padding: 4em 0 0 0;}
+@media only screen and (min-width: 65em) {
+	header { width: 100%; position: fixed; top: 0; z-index: 0; padding: 4em 0 0 0; }
 }
 
 .container { display: block; background: #fff; width: 100%;  position: relative; top: 2em; z-index: 1; }
 
 @media only screen and (min-width: 35em) {
-	.container {top: 50em; z-index: 1; }
+	header { width: 100%; position: relative; padding-top: 5em}
+	.container {top: 0em; z-index: 1; }
+	.blog.container {top: 2em;}
 }
 
 
@@ -150,6 +150,67 @@ cite.source { font-weight: 100; font-size: 0.7em; text-transform: capitalize; co
 	width: 70px;
 }
 
+.title { margin: 0 auto; padding: 1.5em 0 0 0; width: 80%;}
+.lede { }
+.lede h3 {margin-top: 0.45em}
+.lede img { width: 95%}
+.lede .meta { text-align: center}
+.lede .meta p { font-size: 0.85em; color: #999}
+article img { display: block; float: none; margin: 1em 0; width: 100%;}
+
+@media only screen and (min-width: 35em) {
+	.title { padding: 0;}
+	article img { display: inline; float: left; margin: 0 1em 0 0; width: auto}
+}
+
+
+.inner {margin: 0 auto; padding: 2%; max-width: 1140px; /* background: url(../img/dyeline.gif) top center repeat-y  */}
+.social { margin: 0 auto !important; display: block}
+.intro { padding: 3%;}
+
+
+.testi.author {margin: 0 auto; text-align: center; border-bottom: 1px solid #ddd; padding: 2% 0; margin-top: 10%; position: relative; z-index: 99; }
+.testi blockquote { color: #162027; font-weight: 600; line-height: 1.8; margin-top: -2em}
+.testi .avatar { position: relative; top: -30px; width: 65px;}
+cite { display: block; font-style: normal; font-weight: 800; text-transform: uppercase; font-size: 0.85em; color: #e33a3b}
+cite.source { font-weight: 100; font-size: 0.7em; text-transform: capitalize; color: #999}
+
+@media only screen and (min-width: 45em) {
+	.testi { width: 60%; margin-top: 4.5%; }
+	.testi.author blockquote { color: #162027; font-weight: 600; line-height: 1.8; margin-top: -2.5em}
+	.testi.author .avatar { position: relative; top: -30px; }	
+	.testi.author { width: 100%;}
+}
+
+.avatar {
+	text-align: center;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	border: 4px solid #fff;
+	margin-bottom: 1em;
+	width: 70px;
+}
+
+
+p.caption {text-transform: uppercase; font-size: 0.8em; font-weight: 200; letter-spacing: 1px; color: #999}
+b.title { display:block; color: #e53a3a; letter-spacing: -1px; text-transform: uppercase; font-size: 1em; margin-left: 99px; }
+.intro h3 { font-weight: 500; color: #666; font-size: 1em; float: left; position: relative; top: -1.0em; margin-left: 20px;}
+
+hgroup { margin: 0 auto; text-align: center; color: #fff; padding: 2% 8%;  margin-top: 3em; margin-bottom: 1%; }
+hgroup h1 {text-transform: uppercase; font-size: 2em;}
+hgroup h2 {margin: 0 auto; font-size: 1.3em; color: #748a99;}
+hgroup a { text-transform: uppercase; font-weight: bold; padding: 0.2% 0.5%; 
+transition: background .25s ease-in-out;
+-moz-transition: background .25s ease-in-out;
+-webkit-transition: background .25s ease-in-out;}
+hgroup h2 a:hover { background: rgba(0,0,0,0.2); border-radius: 4px; text-shadow: #852424 0 1px 2px;}
+
+
+
 
 p.caption {text-transform: uppercase; font-size: 0.8em; font-weight: 200; letter-spacing: 1px; color: #999}
 b.title { display:block; color: #e53a3a; letter-spacing: -1px; text-transform: uppercase; font-size: 1em; margin-left: 99px; }
@@ -167,6 +228,7 @@ hgroup h2 a:hover { background: rgba(0,0,0,0.2); border-radius: 4px; text-shadow
 .hero figure { margin-top: -2em}
 
 @media only screen and (min-width: 35em) {
+	.title h1 { font-size: 3em;}
 	hgroup h2 {margin: 0 auto; font-size: 1.3em; color: #748a99; width: 50%;}
 	.synopsis { max-width: 75%;}
 }
