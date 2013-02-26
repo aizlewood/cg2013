@@ -1,60 +1,35 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Jon Aizlewood</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/normalize.min.css">
-        <link rel="stylesheet" href="/css/style.css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<?php $title = "The PIE"; ?>
+<?php include("../includes/head.html"); ?>
 
-        <!--[if lt IE 9]>
-            <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+<?php include("../includes/nav.html"); ?>
 	
-        	<nav class="centre" role="navigation">
-        		<ul>
-        			<li class="active"><a href="the-pie.html">Work</a></li>
-        			<li><a href="#">About</a></li>
-        			<li><b>Logo</b></li>
-        			<li><a href="/wrote/seo-pills.html">Blog</a></li>
-        			<li><a href="#">Contact</a></li>
-        		</ul>      		
-	       	</nav>	
 
+<?php include("../includes/arrows.html"); ?>
 
 		<header>
 
-		<div class="inner social">
-
-			<section class="hero centre">
-				<hgroup>
-					<h1><b>The PIE News network</b></h1>
-					<h2>An online news and integrated jobs board aimed at the international education industry.</h2>
-					<p><a href="#">Visit this site</a></p>					
-				</hgroup>
+			<div class="inner social">
+	
+				<section class="hero centre">
+					<hgroup>
+						<h1><b>The PIE News network</b></h1>
+						<h2>An online news and integrated jobs board aimed at the international education industry.</h2>
+						<p><a href="#">Visit this site</a></p>					
+					</hgroup>
+	
+					<figure class="final">
+						<img src="../img/work-comp.jpg" alt="pie" />
+					</figure>
+	
+				</section>
 				
-				<figure class="final">
-					<img src="../img/work-comp.jpg" alt="pie" />
-				</figure>
-
-			</section>
-			
-		</div>
+			</div>
 			
 		</header>
 
         <div class="container">
+
+<!-- <?php include("../includes/work-nav.html"); ?> -->
 		
 		<div class="inner">
 				
@@ -156,27 +131,7 @@
 			
         </div>
 
+<?php include("../includes/footer.html"); ?>
 
-<script src="/js/yepnope.1.5.3-min.js"></script>
-<script>
-(function(win) {
-	if (win.innerWidth > 1024) {
-		yepnope.injectJs("//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", function() {
-			yepnope({
-				test: win.jQuery,
-				nope: "/js/libs/jquery-1.7.1.min.js"
-			});
-			yepnope.injectJs("/js/plugins.js", function() {
-				yepnope.injectJs("/js/main.js");
-			});
-		});
-	} else {
-	    document.documentElement.className = document.documentElement.className.replace('js', '');
-	}
-    
-})(this);
-
-</script>     
- 
     </body>
 </html>
