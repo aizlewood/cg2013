@@ -1,7 +1,7 @@
 <?php $title = "blog"; ?>
-<?php include("../assets/includes/head.html"); ?>
+<?php include("../includes/head.html"); ?>
 
-<?php include("../assets/includes/nav.html"); ?>
+<?php include("../includes/nav.html"); ?>
 
 
         <div class="sub container">
@@ -18,7 +18,7 @@
 
 
 				<div class="testi author">		
-	        		<img class="avatar" src="../assets/images/avatar.png">						
+	        		<img class="avatar" src="/img/avatar.png">						
 					<blockquote>Jon Aizlewood, Designer</blockquote>
 				</div>
 
@@ -106,7 +106,7 @@
 			
         </div>
 
-<?php include("../assets/includes/footer.html"); ?>
+<?php include("../includes/nav.html"); ?>
     
     </body>
 </html>

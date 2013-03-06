@@ -1,10 +1,10 @@
 <?php $title = "The PIE"; ?>
-<?php include("../assets/includes/head.html"); ?>
+<?php include("../includes/head.html"); ?>
 
-<?php include("../assets/includes/nav.html"); ?>
+<?php include("../includes/nav.html"); ?>
 	
 
-<?php include("../assets/includes/arrows.html"); ?>
+<?php include("../includes/arrows.html"); ?>
 
 		<header>
 
@@ -18,7 +18,7 @@
 					</hgroup>
 	
 					<figure class="final">
-						<img src="../assets/images/work-comp.jpg" alt="pie" />
+						<img src="../img/work-comp.jpg" alt="pie" />
 					</figure>
 	
 				</section>
@@ -29,7 +29,7 @@
 
         <div class="container">
 
-<!-- <?php include("../assets/includes/work-nav.html"); ?> -->
+<!-- <?php include("../includes/work-nav.html"); ?> -->
 		
 		<div class="inner">
 				
@@ -59,7 +59,7 @@
 		
 		<div class="row centre">
 
-			<img src="../assets/images/wireframes.jpg" alt="wireframes" />
+			<img src="../img/wireframes.jpg" alt="wireframes" />
 			<p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>		
 		
 		</div>
@@ -68,7 +68,7 @@
 		
 		<div class="row">
 			<div class="testi">		
-        		<img class="avatar" src="../assets/images/avatar.png">						
+        		<img class="avatar" src="/img/avatar.png">						
 				<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu dignissim purus. Aenean metus lorem, dapibus et euismod sed, lobortis vitae est. Nam ac mi arcu, non elementum risus. Nam iaculis urna vitae tellus lacinia bibendum. Suspendisse convallis vehicula semper. Nunc vel felis ligula, nec tincidunt urna.</blockquote>
 				
 				<cite>Amy Baker</cite>		
@@ -80,11 +80,11 @@
 		<p>The early work</p>
 		
 			<div class="half righted">
-				<img src="../assets/images/pie1.jpg" alt="pie1" />
+				<img src="../img/pie1.jpg" alt="pie1" />
 			</div>
 
 			<div class="half lefted last">				
-				<img src="../assets/images/pie2.jpg" alt="pie2" width="282" height="549" />
+				<img src="../img/pie2.jpg" alt="pie2" width="282" height="549" />
 			</div>
 
 		</div>
@@ -131,7 +131,7 @@
 			
         </div>
 
-<?php include("../assets/includes/footer.html"); ?>
+<?php include("../includes/footer.html"); ?>
 
     </body>
 </html>
