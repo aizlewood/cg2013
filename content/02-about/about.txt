@@ -1,0 +1,7 @@
+Title: About
+----
+Text: I used to do more digital marketing. Now I do more designing.
+----
+Subtext: It's been an odd transition, but an oh-so-useful one.
+----
+Link: More about me

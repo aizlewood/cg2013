@@ -1,12 +1,6 @@
-Title: Home
-
+Title: Good design is good marketing.
 ----
-
-Text: 
-
-Yay! If you are seeing this, the installation of Kirby worked :)
-Now just give the links in the menu a try to see if URL redirection works as well.
-
-Check out the docs: <http://getkirby.com/docs> if you run into any problems or send me an email: <bastian@getkirby.com>
-
-Have fun with Kirby!
+Subtitle: So do both.
+----
+Blurb: I design digital products at Clearleft, design & code emails for MailChimp users, and I’ve been a digital marketer for 10 years.
+----
