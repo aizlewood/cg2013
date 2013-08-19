@@ -31,7 +31,9 @@ WebFontConfig = { fontdeck: { id: '26273' } };
 <body>
 
   <header class="masthead">
-    <h1 class="logo"><a href="<?php echo url('/') ?>"><img src="/assets/images/logo-cg.png" alt="CarbonGraffiti"></a></h1>
+    <h1 class="logo">
+    	<a href="<?php echo url('/') ?>"><img src="/assets/images/logo-cg.png" alt="CarbonGraffiti"></a>
+    </h1>
     <?php snippet('menu') ?>
   </header>
 

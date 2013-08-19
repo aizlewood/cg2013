@@ -1,8 +1,9 @@
+</div><!-- /container -->
+
   <footer>
+<?php snippet('submenu') ?>
   </footer>
 
-
-</div><!-- /container -->
 </body>
 
 </html>

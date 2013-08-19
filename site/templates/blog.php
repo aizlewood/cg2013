@@ -5,7 +5,7 @@
   <h1><?php echo html($page->title()) ?></h1>
   <?php echo kirbytext($page->text()) ?>
   
-<?php $articles = $page->children()->visible()->flip()->paginate(10) ?>
+<?php $articles = $page->children()->visible()->flip()->paginate(1000) ?>
 
 <?php foreach($articles as $article): ?>
   
@@ -31,4 +31,8 @@
 
 </section>
 
-<?php snippet('footer') ?>
+</div><!-- /container -->
+
+</body>
+
+</html>
