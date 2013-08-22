@@ -970,17 +970,28 @@ footer nav.submenu ul {
 footer nav.submenu ul li {
 	display: block;
 	list-style-type: none;
-    float: left;
-    width: 50%;
 	margin-right: 0em;
+    margin-bottom: 1em;
 	padding: 0;
-	font-size: 0.8em;
+	font-size: 1em;
 	letter-spacing: -0.04em;
-	line-height: 2;	
+	line-height: 1.4;	
 }
 
-footer nav.submenu ul li:nth-child(odd) {
-    text-align: right;
+@media all and (min-width: 65em) {
+    footer nav.submenu ul {
+        margin: 0 auto;
+    }
+    footer nav.submenu ul li {
+        float: left;
+        font-size: 1em;
+        text-align: left;
+        -o-text-overflow: ellipsis;   /* Opera */
+        text-overflow:    ellipsis;   /* IE, Safari (WebKit) */
+        overflow:hidden;              /* don't show excess chars */
+        white-space:nowrap;           /* force single line */
+        width: 33%;                 /* fixed width */
+    }
 }
 
 footer nav.submenu ul li a {
