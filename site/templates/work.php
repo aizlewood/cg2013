@@ -7,14 +7,18 @@
 
 				<section class="hero centre">
 					<hgroup>
-						<h1><?php echo html($page->title()) ?></h1>
-						<h2 class="thin">An online news and integrated jobs board aimed at the international education industry.</h2>
-						<p><a href="#">Visit this site</a></p>					
+						<h1 class="beta"><?php echo html($page->title()) ?></h1>
+						<h2 class="thin"><?php echo html($page->description()) ?></h2>
+						<!-- <p><a class="cta" href="#">Visit this site</a></p> -->					
 					</hgroup>
 				</section>
 				
 			</div><!-- inner -->
 		</div><!-- herowrap -->
+
+<div class="workmenu">
+  <?php snippet('prevnext--work') ?>
+</div>
 
     <div class="outer">
 

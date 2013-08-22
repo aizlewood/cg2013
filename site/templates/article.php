@@ -9,7 +9,7 @@
 		</header>
 
 		<div class="content">
-			<h1 class="gamma"><?php echo html($page->title()) ?></h1>
+			<h1 class="beta"><?php echo html($page->title()) ?></h1>
 			<?php echo kirbytext($page->text()) ?>
 		</div>
 

@@ -5,13 +5,13 @@
   <h1><?php echo html($page->title()) ?></h1>
   <?php echo kirbytext($page->text()) ?>
   
-<?php $articles = $page->children()->visible()->flip()->paginate(1000) ?>
+<?php $articles = $page->children()->visible()->flip()->paginate(20) ?>
 
 <?php foreach($articles as $article): ?>
   
-  <article>
-    <h2><a href="<?php echo $article->url() ?>"><?php echo html($article->title()) ?></a></h2>
-  </article>
+  <ul class="blog-articles">
+    <li><b><a href="<?php echo $article->url() ?>"><?php echo html($article->title()) ?></a></b></li>
+  </ul>
 
   <?php endforeach ?>
 

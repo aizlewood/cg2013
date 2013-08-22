@@ -1,3 +1,4 @@
+
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 
 article,
@@ -46,6 +47,7 @@ body {
 img {
     max-width: 100% !important;
 }
+
 
 /* ==========================================================================
    Links
@@ -238,14 +240,40 @@ table {
    ========================================================================== */
 
 /* webfonts */
-.wf-loading .receptacle { visibility: hidden;}
-.receptacle { visibility: visible;}
+
+/*.wf-loading h1,
+.wf-loading h2,
+.wf-loading h3,
+.wf-loading h4,
+.wf-loading p {
+	background: url('/assets/images/ajax-loader.gif') no-repeat center center;
+	height: 100%;
+	overflow: hidden;
+	opacity: 0;
+	visibility: hidden;
+}*/
+
+/*.wf-active h1,
+.wf-active h2,
+.wf-active h3,
+.wf-active h4,
+.wf-active p, 
+.wf-inactive h1,
+.wf-inactive h2,
+.wf-inactive h3,
+.wf-inactive h4,
+.wf-inactive p {
+	-webkit-transition: opacity 1s ease-out;  
+	-moz-transition: opacity 1s ease-out; 
+	-o-transition: opacity 1s ease-out;  
+	transition: opacity 1s ease-out;  
+}*/
 
 /* base styles */
 html {
     font-size: 21px;
     line-height: 1.4;
-    color: #666;
+    color: #444;
     font-family:"Karmina Regular", Georgia, serif; font-weight:normal; font-style:normal;
     -webkit-font-smoothing: antialiased;
 }
@@ -285,13 +313,14 @@ h1,
 h2, 
 h3, 
 h4, 
-h5 { font-family:"FS Emeric Bold", Verdana, sans-serif; font-weight:bold; font-style:normal; letter-spacing: -1px;}
+h5,
+.cta { font-family:"FS Emeric Extra Bold", Verdana, sans-serif; font-weight:800; font-style:normal; letter-spacing: -0.05em;}
 
 .thin {font-family:"FS Emeric Book", Verdana, sans-serif; font-weight:normal; font-style:normal;}
 
 ul,
 li {
-    color: #888;
+    color: #666;
     line-height: 1.2;
 }
 
@@ -366,7 +395,7 @@ header nav.menu ul li {
     text-align: center;
     padding: 0 0.5em;
     font-size: 0.65em;
-    font-family:"FS Emeric Book", Verdana, sans-serif; font-weight:normal; font-style:normal;
+    font-family:"FS Emeric Extra Bold", Verdana, sans-serif; font-weight:800; font-style:normal;
     text-transform: uppercase;
 }
 
@@ -403,6 +432,26 @@ header.masthead h1.logo a {
 .blog {
 	text-align: center;
 }
+
+ul.blog-articles {
+	margin:0;
+	padding: 0;
+}
+
+ul.blog-articles li {
+	list-style-type: none;
+	display: block;
+	font-size: 2em; 
+	line-height: 1.2;
+	letter-spacing: -1px;
+	border-bottom: 1px solid #eee;
+}
+
+ul.blog-articles li a {
+	display: block;
+	padding: 2% 0;
+}
+
 
 .blogarticle h1 {
     text-align: left;
@@ -511,10 +560,12 @@ header.masthead h1.logo a {
 }
 
 .herowrap { 
-    background: #162027; 
+    /*background: url(/assets/images/down-arrow.png) 50% 90% no-repeat #162027; */
+    background: url(/assets/images/ipad-pie.png) 50% 120% no-repeat #162027; 
     width: 100%;
     display: table;
     padding: 8% 0;
+    padding-bottom: 5em;
 }
 
 @media only screen and (min-width: 35em) {
@@ -545,12 +596,13 @@ hgroup {
 	text-align: center; 
 	color: #fff; 
 	padding: 2% 8%;  
-	margin-top: 3em; 
+	margin-top: -1em; 
 	margin-bottom: 2em; 
 }
 
 hgroup h2 {
-	color: #748a99; 
+	color: #748a99;
+	font-size: 1em; 
 }
 
 hgroup p a {
@@ -575,6 +627,30 @@ hgroup p a {
     }
 }
 
+.workmenu {
+	display: block;
+	position: relative;
+	top: -2em;
+	right: 1em;
+	text-align: right;
+	color: #fff;
+}
+
+.workmenu a {
+	color: #fff;
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+.workmenu a.prev,
+.workmenu a.next {
+	position: relative;
+	top: 1px;
+}
+
+.workmenu a:hover {
+	opacity: 1;
+}
 
 .container, 
 .outer { 
@@ -588,7 +664,7 @@ hgroup p a {
 }
 
 .outer {
-	margin-top: 2em;
+	margin-top: 0em;
 }
 
 @media only screen and (min-width: 35em) {
@@ -599,7 +675,7 @@ hgroup p a {
 
 /*@media only screen and (min-width: 35em) {
     .herowrap { 
-        background: #162027; 
+        background: url(/assets/images/down-arrow.png) 50% 90% no-repeat #162027;  
         width: 100%; 
         position: fixed; 
         top: 0; 
@@ -609,13 +685,15 @@ hgroup p a {
         top: 20em; 
         z-index: 1;
         margin-top: 0; 
+        background: #fff;
     }
-}
-*/
+}*/
+
 
 img.workshot {
 	margin: 1em auto;
 	width: 90%;
+	max-width: 1140px;
 }
 
 .supportive {
@@ -644,7 +722,7 @@ img.workshot {
 .work-skills ul li {
     display: block;
     text-align: center;
-    color: #999;
+    color: #a49b15;
     font-size: 0.7em;
     font-family:"FS Emeric Book", Verdana, sans-serif; font-weight:normal; font-style:normal;
     text-transform: uppercase; 
@@ -768,10 +846,6 @@ p.caption {
 	font-size: 0.65em;
 }
 
-nav.projects {
-
-}
-
 nav.projects ul {
 	margin:0;
 	padding: 0;
@@ -780,7 +854,6 @@ nav.projects ul {
 nav.projects ul li {
 	list-style-type: none;
 	display: block;
-	font-size: 2em; 
 	line-height: 1.2;
 	letter-spacing: -1px;
 	border-bottom: 1px solid #eee;
@@ -791,6 +864,18 @@ nav.projects ul li a {
 	padding: 2% 0;
 }
 
+nav.projects ul li h2 {
+	margin: 0;
+}
+
+nav.projects ul li p {
+	margin: -0.8em 0 1em 0;
+	color: #888;
+	padding: 0 10%;
+	text-align: center;
+	line-height: 1.4;
+	font-size: 0.9em;
+}
 
 .full {
     width: 98%;

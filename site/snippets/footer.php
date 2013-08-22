@@ -1,6 +1,6 @@
 </div><!-- /container -->
 
-  <footer>
+  <footer id="footer">
 <?php snippet('submenu') ?>
   </footer>
 
