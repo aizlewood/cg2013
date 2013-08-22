@@ -426,6 +426,7 @@ header.masthead h1.logo a {
 .wrap,
 .inner {
     margin: 0 auto;
+    margin-top: 3em;    
     width: 95%;
 }
 
@@ -456,17 +457,19 @@ ul.blog-articles li a {
 .blogarticle h1 {
     text-align: left;
     margin-top: 1em;
-    padding: 5% 0% 2% 0;
+    padding: 0% 0% 2% 0;
     line-height: 1.1;
     color: #333;
 }
 
 @media all and (min-width: 40em) {
     .wrap {
-        width: 50%;
+        max-width: 860px;
+        margin-top: 0;
     }
     .inner {
-        margin: 0 auto; 
+        margin: 0 auto;
+        margin-top: 0; 
         padding: 0%; 
         max-width: 1140px;
     }
@@ -542,6 +545,29 @@ ul.blog-articles li a {
 .blogarticle .prevnext a:hover {
     background: #eee;
 }
+
+.blogmenu {
+    display: block;
+    position: relative;
+    margin-top: 1em;
+}
+
+.blogmenu a {
+    color: #666;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.blogmenu a.prev,
+.blogmenu a.next {
+    position: relative;
+    top: 1px;
+}
+
+.blogmenu a:hover {
+    opacity: 1;
+}
+
 
 @media all and (min-width: 45em) {
     .blogarticle .author .avatar {
@@ -693,7 +719,7 @@ hgroup p a {
 img.workshot {
 	margin: 1em auto;
 	width: 90%;
-	max-width: 1140px;
+    width: 1140px;
 }
 
 .supportive {
@@ -936,7 +962,7 @@ footer nav.submenu h4 {
 }
 
 footer nav.submenu ul {
-	text-align: center;
+	text-align: left;
 	padding: 0 0 1em 0;
 	margin: 0;
 }
@@ -944,6 +970,8 @@ footer nav.submenu ul {
 footer nav.submenu ul li {
 	display: block;
 	list-style-type: none;
+    float: left;
+    width: 50%;
 	margin-right: 0em;
 	padding: 0;
 	font-size: 0.8em;
@@ -951,10 +979,14 @@ footer nav.submenu ul li {
 	line-height: 2;	
 }
 
+footer nav.submenu ul li:nth-child(odd) {
+    text-align: right;
+}
+
 footer nav.submenu ul li a {
 	color: #fff;
 	opacity: 0.3;
-	padding: 1%;
+	padding: 1% 2% 1% 2%;
    transition: opacity .25s ease-in-out;
    -moz-transition: opacity .25s ease-in-out;
    -webkit-transition: opacity .25s ease-in-out;   	
