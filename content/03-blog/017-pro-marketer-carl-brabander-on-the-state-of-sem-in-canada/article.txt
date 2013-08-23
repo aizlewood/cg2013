@@ -12,7 +12,7 @@ text:
 
 ----
 
-tags: canada
+tags: canada, SEM
 
 ----
 

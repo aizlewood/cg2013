@@ -25,7 +25,7 @@ text:
 
 ----
 
-tags: design, email, most read, top 10
+tags: design, email, most read, top 10, email design, email marketing
 
 ----
 

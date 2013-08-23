@@ -22,7 +22,7 @@ See the MailChimp-only page <a href="http://www.carbongraffiti.com/mailchimp-exp
 
 ----
 
-tags: 
+tags: Analytics,email design,Email Marketing,General
 
 ----
 

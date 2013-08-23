@@ -12,7 +12,7 @@ Wordpress have just released their 2.5 version, which is an all-rounder of an up
 
 ----
 
-tags: 
+tags: General
 
 ----
 

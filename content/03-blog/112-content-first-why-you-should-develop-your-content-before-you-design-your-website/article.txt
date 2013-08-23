@@ -46,7 +46,7 @@ In the next post we’ll consider easy ways to create your content. Because for 
 
 ----
 
-tags: 
+tags: business,content,process,web design
 
 ----
 

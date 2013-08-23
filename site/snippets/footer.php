@@ -1,7 +1,7 @@
 </div><!-- /container -->
 
   <footer id="footer">
-<?php snippet('submenu') ?>
+<?php snippet('blog-list') ?>
   </footer>
 
 </body>

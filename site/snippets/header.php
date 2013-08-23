@@ -7,6 +7,19 @@
 <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
 <meta name="robots" content="index, follow" />
 <link rel="alternate" type="application/rss+xml" href="<?php echo url('blog/feed') ?>" title="Blog Feed" />
+<link rel="canonical" href="<?php echo html($page->url()) ?>" />  
+<meta name="title" content="<?php echo html($page->title()) ?> | <?php echo html($site->title()) ?>" />
+<meta name="author" content="<?php echo html($site->author()) ?>" />
+<meta name="publisher" content="<?php echo html($site->author()) ?>" />
+<meta name="copyright" content="<?php echo html($site->author()) ?>" />
+<meta name="description" content="<?php echo html($page->description()) ?>" />
+<meta name="robots" content="index,follow" />
+<meta name="DC.Title" content="<?php echo html($page->title()) ?> | <?php echo html($site->title()) ?>" />
+<meta name="DC.Creator" content="<?php echo html($site->author()) ?>" />
+<meta name="DC.Rights" content="<?php echo html($site->author()) ?>" />
+<meta name="DC.Publisher" content="<?php echo html($site->author()) ?>" />
+<meta name="DC.Description" content="<?php echo html($page->description()) ?>"/ >
+<meta name="DC.Language" content="en" />
 <?php echo css('assets/styles/main.css') ?>
 <?php foreach($page->files()->findByExtension('css') as $css): ?>
 <?php echo css($css->url()) ?>

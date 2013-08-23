@@ -24,7 +24,7 @@ So, if you happen to be heading to Brighton in September for any of the large co
 
 ----
 
-tags: 
+tags: General,responsive,Wordpress
 
 ----
 

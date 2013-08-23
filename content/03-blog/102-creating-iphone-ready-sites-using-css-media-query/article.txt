@@ -34,7 +34,7 @@ Having become somewhat obsessed with responsive design recently (and applying it
 
 ----
 
-tags: 
+tags: Mobile,web design
 
 ----
 

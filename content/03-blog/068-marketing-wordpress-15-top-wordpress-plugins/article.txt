@@ -1,4 +1,4 @@
-title: Marketing &amp; Wordpress:  15 Top Wordpress plugins
+title: Marketing & Wordpress:  15 Top Wordpress plugins
 
 ----
 
@@ -91,7 +91,7 @@ Although not a plugin, this is a great tutorial for the techies to show you how 
 
 ----
 
-tags: marketing, plugins, social, tips
+tags: marketing, plugins, social, tips, blogging,General,Online Marketing,quick tips,SEM,SEO,Wordpress
 
 ----
 

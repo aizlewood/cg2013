@@ -33,7 +33,7 @@ RewriteRule ^(.*)$ index.php?/$1 [L]</code>
 
 ----
 
-tags: easyphp, sweetcron
+tags: easyphp, sweetcron, lifestream
 
 ----
 

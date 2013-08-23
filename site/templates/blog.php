@@ -5,9 +5,27 @@
   <h1><?php echo html($page->title()) ?></h1>
   <?php echo kirbytext($page->text()) ?>
   
-<?php $articles = $page->children()->visible()->flip()->paginate(20) ?>
+  <?php if(param('tag')) {
 
-<?php foreach($articles as $article): ?>
+    $tag = urldecode(param('tag'));
+    $blog = $pages->find('blog')
+                      ->children()
+                      ->visible()
+                      ->filterBy('tags', urldecode(param('tag')), ',')
+                      ->flip()
+                      ->paginate(20);
+
+  } else {
+
+    $blog = $pages->find('blog')
+                      ->children()
+                      ->visible()
+                      ->flip()
+                      ->paginate(20);
+
+  } ?>
+
+<?php foreach($blog as $article): ?>
   
   <ul class="blog-articles">
     <li><b><a href="<?php echo $article->url() ?>"><?php echo html($article->title()) ?></a></b></li>
@@ -15,18 +33,20 @@
 
   <?php endforeach ?>
 
-<?php if($articles->pagination()->hasPages()): ?>
+<?php if($blog->pagination()->hasPages()): ?>
+<div class="prevnext">
 <nav class="pagination">  
 
-  <?php if($articles->pagination()->hasNextPage()): ?>
-  <a class="next" href="<?php echo $articles->pagination()->nextPageURL() ?>">&lsaquo; older posts</a>
-  <?php endif ?>
+  <?php if($blog->pagination()->hasNextPage()): ?>
+  <a class="prev" href="<?php echo $blog->pagination()->nextPageURL() ?>">&lsaquo; Older posts</a>
+  <?php endif ?>  
 
-  <?php if($articles->pagination()->hasPrevPage()): ?>
-  <a class="prev" href="<?php echo $articles->pagination()->prevPageURL() ?>">newer posts &rsaquo;</a>
+  <?php if($blog->pagination()->hasPrevPage()): ?>
+  <a class="next" href="<?php echo $blog->pagination()->prevPageURL() ?>">Newer posts &rsaquo;</a>
   <?php endif ?>
 
 </nav>
+</div>
 <?php endif ?>
 
 </section>

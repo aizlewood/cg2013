@@ -442,7 +442,7 @@ ul.blog-articles {
 ul.blog-articles li {
 	list-style-type: none;
 	display: block;
-	font-size: 2em; 
+	font-size: 1.4em; 
 	line-height: 1.2;
 	letter-spacing: -1px;
 	border-bottom: 1px solid #eee;
@@ -476,6 +476,9 @@ ul.blog-articles li a {
     .blogarticle h1 {
         margin-top: 0.5em;
     }
+    ul.blog-articles li {
+        font-size: 2em; 
+    }    
 }    
 
 .blogarticle p:first-child:first-letter { 
@@ -520,12 +523,12 @@ ul.blog-articles li a {
 }
   
 
-.blogarticle .prevnext {
+.prevnext {
     margin: 2em auto;
     overflow: hidden;
 }
 
-.blogarticle .prevnext a {
+.prevnext a {
     display: block;
     color: #666;
     width: 45%;
@@ -538,18 +541,21 @@ ul.blog-articles li a {
     text-decoration: none;   
 }
 
-.blogarticle .prevnext a.prev {
+.prevnext a.prev {
     border-right: 1px solid #ddd;
 }
 
-.blogarticle .prevnext a:hover {
+.prevnext a:hover {
     background: #eee;
 }
 
 .blogmenu {
-    display: block;
     position: relative;
-    margin-top: 1em;
+    top: -15px;
+    left: 43.5%;
+    background: #fff;
+    width: 100px;
+    text-align: center;
 }
 
 .blogmenu a {
@@ -568,6 +574,10 @@ ul.blog-articles li a {
     opacity: 1;
 }
 
+.blogmenu a:active {
+    position: relative;
+    top: 1px;
+}
 
 @media all and (min-width: 45em) {
     .blogarticle .author .avatar {
@@ -962,7 +972,7 @@ footer nav.submenu h4 {
 }
 
 footer nav.submenu ul {
-	text-align: left;
+	text-align: center;
 	padding: 0 0 1em 0;
 	margin: 0;
 }
@@ -976,22 +986,6 @@ footer nav.submenu ul li {
 	font-size: 1em;
 	letter-spacing: -0.04em;
 	line-height: 1.4;	
-}
-
-@media all and (min-width: 65em) {
-    footer nav.submenu ul {
-        margin: 0 auto;
-    }
-    footer nav.submenu ul li {
-        float: left;
-        font-size: 1em;
-        text-align: left;
-        -o-text-overflow: ellipsis;   /* Opera */
-        text-overflow:    ellipsis;   /* IE, Safari (WebKit) */
-        overflow:hidden;              /* don't show excess chars */
-        white-space:nowrap;           /* force single line */
-        width: 33%;                 /* fixed width */
-    }
 }
 
 footer nav.submenu ul li a {
@@ -1008,7 +1002,14 @@ footer nav.submenu ul li a:hover {
 	text-decoration: none;
 }
 
-
+footer time {
+    font-size: 0.75em;
+    position: relative;
+    top: -0.45em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    opacity: 0.4;
+}
 
 
 
