@@ -1,8 +1,8 @@
 </div><!-- /container -->
 
-  <footer id="footer">
+<footer id="footer">
 <?php snippet('blog-list') ?>
-  </footer>
+</footer>
 
 </body>
 

@@ -1,4 +1,6 @@
-<section id="about">
+
+
+<section class="blog home">
 
  <h3>Latest from the blog</h3>
 

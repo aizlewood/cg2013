@@ -422,6 +422,28 @@ header.masthead h1.logo a {
 	z-index: 3;
 }
 
+
+/* ----------------- Home ----------------- */
+
+.intro.home {
+    background: #666;
+}
+.work.home {
+    background: #ddd;
+}
+.about {
+    background: #ccc;
+}
+
+.blog.home {
+    background: #ddd;
+}
+
+.contact.home {
+    background: #eee;
+}
+
+
 /* ----------------- Blog article ----------------- */
 .wrap,
 .inner {
