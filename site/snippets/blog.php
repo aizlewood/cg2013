@@ -34,7 +34,7 @@
 
 	<div class="excerpt">
 	    <p><?php echo excerpt($article->text(), 500) ?></p>
-	    <p><a class="cta" href="<?php echo url('/') ?>work">Keep reading</a></p>    
+	    <p><a class="cta" href="<?php echo $article->url() ?>">Keep reading</a></p>    
     </div>
   </div>
 
