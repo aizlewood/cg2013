@@ -1,4 +1,8 @@
+
+
 <section class="contact home">
- <h1><?php echo html($data->title()) ?></h1>
- <?php echo kirbytext($data->text()) ?>
+<div class="inner">
+	 <h1><?php echo html($data->title()) ?></h1>
+	 <?php echo kirbytext($data->text()) ?>
+</div>	 
 </section>

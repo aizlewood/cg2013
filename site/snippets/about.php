@@ -1,8 +1,9 @@
 
 
 <section class="about home">
- <h1><?php echo html($data->title()) ?></h1>
- <?php echo kirbytext($data->text()) ?>
-  <?php echo kirbytext($data->subtext()) ?>
-   <?php echo kirbytext($data->link()) ?>
+	<div class="inner">
+	<h1 class="thin gamma"><?php echo kirbytext($data->text()) ?></h1>
+	<h2 class="thin delta"><?php echo kirbytext($data->subtext()) ?></h2>
+	<p><a class="cta" href="<?php echo url('/') ?>about">More about me</a></p>
+	</div>
 </section>

@@ -50,4 +50,4 @@ WebFontConfig = { fontdeck: { id: '26273' } };
     <?php snippet('menu') ?>
   </header>
 
-  <div class="container">
+<div class="animated FadeIn container <?php echo $page->template() ?>">

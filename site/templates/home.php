@@ -3,12 +3,13 @@
 
 <section class="intro home">
 
+<div class="inner">
   <article>
-    <h1><?php echo html($page->title()) ?></h1>
-    <h2><?php echo html($page->subtitle()) ?></h2>
-    <p><?php echo html($page->blurb()) ?></p>
+    <h1 class="beta thin"><?php echo html($page->title()) ?></h1>
+    <h2 class="epsilon"><?php echo html($page->subtitle()) ?></h2>
+    <h3 class="thin"><?php echo html($page->blurb()) ?></h3>
   </article>
-
+</div>
 </section>
 
 

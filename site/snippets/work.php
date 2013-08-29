@@ -1,20 +1,21 @@
-<section class="work home">
- <h1><?php echo html($data->title()) ?></h1>
- <?php echo kirbytext($data->text()) ?>
 
-<h3>Some selected work</h3>
+<section class="work home">
+<div class="inner">
+
+<h3 class="thin lined">Some selected work</h3>
 
  <ul>
-  <?php foreach($data->children()->visible() as $project): ?>
+  <?php foreach($data->children()->visible()->limit(3) as $project): ?>
   <li>
+	 <h2 class="thin delta"><?php echo html($project->title()) ?></h2>
+	 <h3 class="zeta thin"><?php echo kirbytext($project->blurb()) ?></h3>
     <figure>
-     <img src="<?php echo $project->images()->first()->url() ?>" alt="<?php echo html($project->title()) ?>" />
+     <a href="<?php echo $project->url() ?>"><img src="<?php echo $project->images()->first()->url() ?>" alt="<?php echo html($project->title()) ?>" /></a>
     </figure>
   </li>
   <?php endforeach ?>
  </ul>
+<p><a class="cta" href="<?php echo url('/') ?>work">View more work</a></p>
 
-
-<a href="#">View more work</a>
-
+</div>
 </section>
