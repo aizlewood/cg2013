@@ -447,7 +447,7 @@ header.masthead h1.logo a {
 
 .intro.home {
     padding: 5em 0;
-    background: #162027;
+    background: url(/assets/images/me.jpg) center no-repeat #162027;
     color: #fff;
 }
 
@@ -514,7 +514,7 @@ h3.lined {
 
 
 .about.home {
-    background: #da3737;
+    background: url(/assets/images/me2.jpg) center no-repeat  #da3737;
     color: #fff;
 }
 
