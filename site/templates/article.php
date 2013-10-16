@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<section class="content blogarticle">
+<section class="content blogarticle tight">
 
   <article class="wrap">
 

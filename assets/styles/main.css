@@ -583,6 +583,7 @@ ul.blog-articles li {
 	line-height: 1.2;
 	letter-spacing: -1px;
 	border-bottom: 1px solid #eee;
+    padding-bottom: 3%;
 }
 
 ul.blog-articles li a {
@@ -590,6 +591,13 @@ ul.blog-articles li a {
 	padding: 2% 0;
 }
 
+ul.blog-articles li time {
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #999;
+}
 
 .blogarticle h1 {
     text-align: left;
@@ -601,9 +609,13 @@ ul.blog-articles li a {
 
 @media all and (min-width: 40em) {
     .wrap {
-        max-width: 860px;
+        max-width: 1140px;
         margin-top: 0;
     }
+    .tight {
+        max-width: 860px;
+        margin: 0 auto;
+    }    
     .inner {
         margin: 0 auto;
         margin-top: 0; 
@@ -753,6 +765,18 @@ margin-left: 20px;
 
 
 /* ----------- Work ----------------*/
+
+@media all and (min-width: 40em) {
+    nav.projects ul li {
+        width: 30.5%;
+        float: left;      
+        margin: 0 1.5%;       
+    }
+    nav.projects ul li:nth-child(3n-3) {
+        margin-right: 0;
+    }    
+}
+
 .centre {text-align: center}
 .middle { margin: 0 auto;}
 

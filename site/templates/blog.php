@@ -13,7 +13,7 @@
                       ->visible()
                       ->filterBy('tags', urldecode(param('tag')), ',')
                       ->flip()
-                      ->paginate(20);
+                      ->paginate(50);
 
   } else {
 
@@ -21,14 +21,15 @@
                       ->children()
                       ->visible()
                       ->flip()
-                      ->paginate(20);
+                      ->paginate(50);
 
   } ?>
 
 <?php foreach($blog as $article): ?>
   
   <ul class="blog-articles">
-    <li><b><a href="<?php echo $article->url() ?>"><?php echo html($article->title()) ?></a></b></li>
+    <li><a href="<?php echo $article->url() ?>"><?php echo html($article->title()) ?></a>
+    <time datetime="<?php echo $article->date('c') ?>" pubdate="pubdate"><?php echo $article->date('F j, Y') ?></time></li>
   </ul>
 
   <?php endforeach ?>
