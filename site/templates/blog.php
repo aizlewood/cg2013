@@ -28,8 +28,11 @@
 <?php foreach($blog as $article): ?>
   
   <ul class="blog-articles">
-    <li><a href="<?php echo $article->url() ?>"><?php echo html($article->title()) ?></a>
-    <time datetime="<?php echo $article->date('c') ?>" pubdate="pubdate"><?php echo $article->date('F j, Y') ?></time></li>
+    <li>
+        <time datetime="<?php echo $article->date('c') ?>" pubdate="pubdate"><?php echo $article->date('F j, Y') ?></time>
+        <a href="<?php echo $article->url() ?>"><?php echo html($article->title()) ?></a>
+        <p><?php echo excerpt($article->text(), 200) ?></p>
+    </li>
   </ul>
 
   <?php endforeach ?>

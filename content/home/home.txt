@@ -1,6 +1,11 @@
-Title: Good design is good marketing.
+Title: This is interesting
 ----
-Subtitle: So do both.
+Subtitle: Believe me, it's true
 ----
-Blurb: I design digital products at Clearleft, design & code emails for MailChimp users, and I’ve been a digital marketer for 10 years.
+Blurb: I design websites at the user experience consultancy (link: http://clearleft.com text: Clearleft), design & code emails for (link: http://experts.mailchimp.com text: MailChimp users) and I’ve led a past life as a digital marketer for 10 years.
 ----
+Blurb: 
+# I'm currently a Visual designer at (link: http://clearleft.com text: Clearleft)
+----
+Mini: 
+I've also been a digital marketer for 10 years.  More (link: http://# text: about me) or (link: http://# text: read some thoughts).

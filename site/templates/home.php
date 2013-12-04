@@ -3,17 +3,19 @@
 
 <section class="intro home">
 
-<div class="inner">
+<!-- <div class="inner"> -->
   <article>
-    <h1 class="beta thin"><?php echo html($page->title()) ?></h1>
-    <h2 class="epsilon"><?php echo html($page->subtitle()) ?></h2>
-    <h3 class="thin"><?php echo html($page->blurb()) ?></h3>
+    <?php echo kirbytext($page->blurb()) ?>
+    <?php echo kirbytext($page->mini()) ?>
   </article>
-</div>
+<!--   <div class="circle1">&nbsp;</div>
+  <div class="circle2">&nbsp;</div> -->
+<!-- </div> -->
 </section>
 
-
+<div class="wrapper">
 <?php foreach($pages->visible() as $section) {
   snippet($section->uid(), array('data' => $section));} ?>
+</div>
 
 <?php snippet('footer') ?>

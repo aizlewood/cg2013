@@ -44,11 +44,21 @@ WebFontConfig = { fontdeck: { id: '26273' } };
 </script>
 <body>
 
+  <?php if ($page->isHomepage()): ?>
+  <header class="masthead home">
+    <h1 class="logo">
+      <a href="<?php echo url('/') ?>"><img src="/assets/images/logo-cg.png" alt="CarbonGraffiti"></a>
+    </h1>
+  </header>
+   <?php else: ?>
+
   <header class="masthead">
     <h1 class="logo">
-    	<a href="<?php echo url('/') ?>"><img src="/assets/images/logo-cg.png" alt="CarbonGraffiti"></a>
+      <a href="<?php echo url('/') ?>"><img src="/assets/images/logo-cg.png" alt="CarbonGraffiti"></a>
     </h1>
     <?php snippet('menu') ?>
   </header>
+
+  <?php endif ?>
 
 <div class="animated FadeIn container <?php echo $page->template() ?>">
