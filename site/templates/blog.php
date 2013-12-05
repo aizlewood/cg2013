@@ -2,8 +2,8 @@
 
 <section class="content blog wrap">
   
-  <h1><?php echo html($page->title()) ?></h1>
-  <?php echo kirbytext($page->text()) ?>
+<!--   <h1><?php echo html($page->title()) ?></h1>
+  <?php echo kirbytext($page->text()) ?> -->
   
   <?php if(param('tag')) {
 
@@ -30,12 +30,15 @@
   <ul class="blog-articles">
     <li>
         <time datetime="<?php echo $article->date('c') ?>" pubdate="pubdate"><?php echo $article->date('F j, Y') ?></time>
-        <a href="<?php echo $article->url() ?>"><?php echo html($article->title()) ?></a>
+        <h2><a href="<?php echo $article->url() ?>"><?php echo html($article->title()) ?></a></h2>
         <p><?php echo excerpt($article->text(), 200) ?></p>
     </li>
   </ul>
 
   <?php endforeach ?>
+
+</section>
+
 
 <?php if($blog->pagination()->hasPages()): ?>
 <div class="prevnext">
@@ -52,8 +55,6 @@
 </nav>
 </div>
 <?php endif ?>
-
-</section>
 
 </div><!-- /container -->
 

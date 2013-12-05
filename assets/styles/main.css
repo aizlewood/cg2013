@@ -282,7 +282,7 @@ table {
 
 /* base styles */
 html {
-    font-size: 21px;
+    font-size: 18px;
     line-height: 1.4;
     color: #444;
     font-family:"Karmina Regular", Georgia, serif; font-weight:normal; font-style:normal;
@@ -297,26 +297,26 @@ em, i {
     font-family:"Karmina Italic", Georgia, serif; font-weight:normal; font-style:italic;
 }
 
-.tera { font-size: 6.5em; line-height: 1.2;}
+/*.tera { font-size: 6.5em; line-height: 1.2;}
 .giga { font-size: 5em; line-height: 1.2;}
 .mega { font-size: 4em; line-height: 1.2;}
-.alpha { font-size: 3.333em; line-height: 1.2;}
-.beta { font-size: 2.6667em; line-height: 1.2;}
-.gamma { font-size: 2em; line-height: 1.2;}
-.delta { font-size: 1.333em; line-height: 1.2;}
-.epsilon { font-size: 1.1667em; line-height: 1.2;}
-.zeta { font-size: 0.7em; line-height: 1.2;}
+h1 { font-size: 3.333em; line-height: 1.2;}
+h2 { font-size: 2.6667em; line-height: 1.2;}
+h3 { font-size: 2em; line-height: 1.2;}
+h4 { font-size: 1.333em; line-height: 1.2;}
+h5 { font-size: 1.1667em; line-height: 1.2;}
+h6 { font-size: 0.7em; line-height: 1.2;}*/
 
 @media all and (max-width: 40em) {
-    .tera { font-size: 5em; line-height: 1.2;}
+/*    .tera { font-size: 5em; line-height: 1.2;}
     .giga { font-size: 4em; line-height: 1.2;}
-    .mega { font-size: 3.333em; line-height: 1.2;}
-    .alpha { font-size: 2.667em; line-height: 1.2;}
-    .beta { font-size: 2em; line-height: 1.2;}
-    .gamma { font-size: 1.333em; line-height: 1.2;}
-    .delta { font-size: 1.1667em; line-height: 1.2;}
-    .epsilon { font-size: 1em; line-height: 1.2;}
-    .zeta { font-size: 0.5em; line-height: 1.2;}
+    .mega { font-size: 3.333em; line-height: 1.2;}*/
+    h1 { font-size: 2.667em; line-height: 1.2;}
+    h2 { font-size: 2em; line-height: 1.2;}
+    h3 { font-size: 1.333em; line-height: 1.2;}
+    h4 { font-size: 1.1667em; line-height: 1.2;}
+    h5 { font-size: 1em; line-height: 1.2;}
+    h6 { font-size: 0.5em; line-height: 1.2;}
 }
 
 
@@ -332,7 +332,6 @@ h5,
 ul,
 li {
     color: #666;
-    line-height: 1.2;
 }
 
 blockquote {
@@ -370,7 +369,7 @@ a.cta {
 }
 
 p {
-    margin-bottom: 2em;
+    font-size: 1.2em;
 }
 
 header.masthead {
@@ -592,10 +591,6 @@ h3.lined {
     float: none;
 }
 
-.work.home p {
-    margin-top: 3em;
-}
-
 @media all and (min-width: 40em) {
     .work.home ul li {
         width: 30.5%;
@@ -670,18 +665,15 @@ ul.blog-articles {
 	margin:0 auto;
 	padding: 0;
     text-align: left;
-    max-width: 30em;
+    max-width: 80%;
 }
 
 ul.blog-articles li {
 	list-style-type: none;
-	display: block;
-	font-size: 1.2em; 
-	line-height: 1.2;
 	letter-spacing: -1px;
-/*	border-bottom: 1px solid #eee;*/
     padding-bottom: 3%;
     margin: 0em 0 1em 0;
+    clear: both;
 }
 
 ul.blog-articles li time {
@@ -703,14 +695,12 @@ ul.blog-articles li a {
     float: left;
 	display: block;
 	padding: 1% 0 1% 5%;
-    font-family:"FS Emeric Extra Bold", Verdana, sans-serif; font-weight:800; font-style:normal; letter-spacing: -0.05em;
+    font-family:"FS Emeric Book", Verdana, sans-serif; font-weight: normal; font-style:normal; letter-spacing: -0.05em;
 }
 
-ul.blog-articles li p {
-    width: 95%; 
+ul.blog-articles li p { 
     float: left;
     display: block;
-    font-size: 0.7em;
     padding: 0% 0 3% 5%;
 }
 
@@ -743,9 +733,6 @@ ul.blog-articles li p {
     .blogarticle h1 {
         margin-top: 0.5em;
     }
-    ul.blog-articles li {
-        font-size: 1.6em; 
-    }    
 }    
 
 .blogarticle p:first-child:first-letter { 
@@ -791,29 +778,44 @@ ul.blog-articles li p {
   
 
 .prevnext {
-    margin: 2em auto;
+    clear: both;
     overflow: hidden;
     border-top: 1px solid #ddd;    
-    border-bottom: 1px solid #ddd;     
+    border-bottom: 1px solid #ddd;  
+    margin-bottom: 2em;   
 }
 
 .prevnext a {
     display: block;
     color: #666;
-    width: 45%;
+    width: 49.7%;
     float: left;
     text-align: center;
     line-height: 2.0;
-    padding: 3px 8px;
+    padding: 10px 0;
     text-decoration: none;   
 }
 
-.prevnext a.prev {
-    border-right: 1px solid #ddd;
+.prevnext a.next {
+    float: right;
+    border-left: 1px solid #ccc;
 }
 
 .prevnext a:hover {
     background: #eee;
+}
+
+@media all and (min-width: 40em) {
+    .prevnext a {
+        display: block;
+        color: #666;
+        width: 49.9%;
+        float: left;
+        text-align: center;
+        line-height: 2.0;
+        padding: 20px 0;
+        text-decoration: none;   
+    }
 }
 
 .blogmenu {

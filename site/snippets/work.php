@@ -7,8 +7,8 @@
  <ul>
   <?php foreach($data->children()->visible()->limit(3) as $project): ?>
   <li>
-	 <h2 class="thin delta"><?php echo html($project->title()) ?></h2>
-	 <h3 class="zeta thin"><?php echo kirbytext($project->blurb()) ?></h3>
+	 <h2><?php echo html($project->title()) ?></h2>
+	 <?php echo kirbytext($project->blurb()) ?>
     <figure>
      <a href="<?php echo $project->url() ?>"><img src="<?php echo $project->images()->first()->url() ?>" alt="<?php echo html($project->title()) ?>" /></a>
     </figure>
