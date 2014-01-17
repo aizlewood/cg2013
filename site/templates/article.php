@@ -1,12 +1,8 @@
 <?php snippet('header') ?>
 
-<section class="content blogarticle tight">
+<section class="content">
 
-  <article class="wrap">
-
-		<header>
-			<?php snippet('author') ?>
-		</header>
+  <article>
 
 		<div class="content">
 			<h1 class="beta"><?php echo html($page->title()) ?></h1>
@@ -24,6 +20,11 @@
 		</div>    
 
   </article>
+
+	<section>
+		<?php snippet('author') ?>
+	</section>
+
 </section>
 
 <?php snippet('footer') ?>
