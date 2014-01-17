@@ -28,6 +28,9 @@
 <?php foreach($page->files()->findByExtension('js') as $js): ?>
 <?php echo js($js->url()) ?>
 <?php endforeach ?>
+
+<script src="/assets/js/modernizr.custom.js"></script>
+
 </head>
 <script type="text/javascript">
 WebFontConfig = { fontdeck: { id: '26273' } };

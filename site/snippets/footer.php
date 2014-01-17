@@ -1,9 +1,10 @@
 </div><!-- /container -->
 
 <footer id="footer">
-<?php snippet('blog-list') ?>
 </footer>
 
+		<script src="/assets/js/classie.js"></script>
+		<script src="/assets/js/sidebarEffects.js"></script>
 </body>
 
 </html>

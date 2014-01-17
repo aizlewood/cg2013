@@ -8,14 +8,13 @@ date: 2011-09-15 10:21
 
 text: 
 
-Should websites be built around the content, or should content be created to fit the design?
-
-Here’s an argument for creating content first – or at least <em>thinking</em> about content first.
+Should websites be built around the content, or should content be created to fit the design? Here’s an argument for creating content first – or at least <em>thinking</em> about content first.
 
 <h3>What is a website anyway?</h3>
 Websites exist to deliver content. Websites are the things we create when we have something to say, and something to show. We create websites because we have content to display and share.
 
 We <em>design</em> websites because we want content to look great, to give users a pleasing experience and to create a good impression of our treasured brands.
+
 <h3>Designing for the content</h3>
 Typically, professional web designers design websites, while the client provides the content. After all, it is <em>the client’s content</em>. So the designer designs, and the client gets busy working on the content. Except they don’t; they get busy with business, and forget about the content.
 
